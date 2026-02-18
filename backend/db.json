@@ -1,0 +1,7 @@
+{
+  "courses": [
+    { "id": 1, "name": "React Basics", "author": "John Doe" },
+    { "id": 2, "name": "Node.js API", "author": "Jane Smith" },
+    { "id": 3, "name": "MongoDB Mastery", "author": "Mike Johnson" }
+  ]
+}
