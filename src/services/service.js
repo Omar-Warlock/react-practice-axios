@@ -12,7 +12,16 @@ export async function addCourse(course) {
 }
 
 // delete course
-
 export async function deleteCourse(id) {
   await axios.delete(`${url}/${id}`);
+}
+
+// edit course
+export async function editCourse(id, course) {
+  await axios.put(`${url}/${id}`, course);
+}
+
+// get single Course
+export async function getSingleCourse(id) {
+  return await axios.get(`${url}/${id}`);
 }

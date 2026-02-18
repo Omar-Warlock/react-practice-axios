@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { deleteCourse, getAllCourses } from "../services/service";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const [courses, setCourses] = useState([]);
-
+  const navigate = useNavigate();
   const handleDelete = (id) => {
     deleteCourse(id);
     const filteredCourses = courses.filter((course) => course.id !== id);
@@ -60,7 +61,7 @@ const Home = () => {
 
                 <button
                   className="btn btn-success btn-sm"
-                  onClick={() => handleShow(course)}
+                  onClick={() => navigate(`/courses/${course.id}`)}
                 >
                   Show
                 </button>
