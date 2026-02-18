@@ -10,3 +10,9 @@ export async function getAllCourses() {
 export async function addCourse(course) {
   await axios.post(url, course);
 }
+
+// delete course
+
+export async function deleteCourse(id) {
+  await axios.delete(`${url}/${id}`);
+}

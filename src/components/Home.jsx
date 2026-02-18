@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { getAllCourses } from "../services/service";
+import { deleteCourse, getAllCourses } from "../services/service";
 
 const Home = () => {
   const [courses, setCourses] = useState([]);
 
   const handleDelete = (id) => {
+    deleteCourse(id);
     const filteredCourses = courses.filter((course) => course.id !== id);
     setCourses(filteredCourses);
   };

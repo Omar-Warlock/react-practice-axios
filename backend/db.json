@@ -1,24 +1,14 @@
 {
   "courses": [
     {
-      "id": 1,
+      "id": "1",
       "name": "React Basics",
       "author": "John Doe"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Node.js API",
       "author": "Jane Smith"
-    },
-    {
-      "id": 3,
-      "name": "MongoDB Mastery",
-      "author": "Mike Johnson"
-    },
-    {
-      "id": "9fb3",
-      "name": "samy",
-      "author": "122"
     }
   ]
 }
